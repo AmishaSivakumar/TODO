@@ -27,8 +27,8 @@ function SingleTodo({ todo }) {
                         {todo.checked ? <del>{todo.text}</del> : <h3>{todo.text}</h3>}
                     </div>
                     <div style={{ display: 'flex', gap: 20 }}>
-                        <button onClick={() => setEdit(true)}><i class="bi bi-pencil-square"></i></button>
-                        <button onClick={() => dispatchTodo(deleteTodo(todo))}><i class="bi bi-trash3"></i></button>
+                        <button onClick={() => setEdit(true)}><i className="bi bi-pencil-square"></i></button>
+                        <button onClick={() => dispatchTodo(deleteTodo(todo))}><i className="bi bi-trash3"></i></button>
                     </div>
                 </div>}
         </div >
